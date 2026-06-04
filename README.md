@@ -1,16 +1,80 @@
-# React + Vite
+# CareerPath.ai - Frontend Application
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Aplikasi web untuk **Sistem Rekomendasi Karir Berbasis Asesmen** menggunakan teknologi Machine Learning untuk menganalisis profil minat, kemampuan, dan komitmen waktu belajar pengguna guna memberikan rekomendasi 3 profesi digital teratas lengkap dengan persentase kesiapan dan analisis *skill gap*.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🔗 Hubungan Repositori
 
-## React Compiler
+Untuk dapat menjalankan aplikasi ini secara fungsional secara *end-to-end*, Anda memerlukan repositori Backend yang menangani pemrosesan model AI dan database.
+* **Repositori Backend**: [careerpath-backend](https://github.com/harrymx1/careerpath-backend)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🛠️ Teknologi & Tools
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Aplikasi frontend ini dibangun dengan memanfaatkan teknologi modern berikut:
+* **Core**: React.js (Javascript)
+* **Build Tool**: Vite (Module Bundler)
+* **Styling**: Tailwind CSS
+* **Networking**: Axios (untuk integrasi RESTful API)
+* **Routing**: React Router DOM
+
+---
+
+## 🚀 Fitur Utama (Frontend)
+
+1. **Dashboard / Landing Page**: Halaman utama interaktif yang menampilkan tata cara kerja sistem rekomendasi dan riwayat pengujian sebelumnya.
+2. **Form Asesmen**: Kuesioner berisi 10 pertanyaan komprehensif (Q1 - Q10) dengan skala 1-5 untuk menilai minat dan kemampuan di berbagai bidang teknologi.
+3. **Analisis Rekomendasi & Skill Gap**: Menampilkan 3 hasil rekomendasi teratas yang bersumber dari prediksi model Machine Learning backend beserta visualisasi persentase kecocokan.
+4. **Profil Pengguna**: Menampilkan ringkasan keahlian teknis (*hard skill*), kemampuan komunikasi (*soft skill*), serta jurnal pengalaman kerja/organisasi.
+
+---
+
+## 💻 Cara Menjalankan Project Secara Lokal
+
+Ikuti langkah-langkah berikut untuk menjalankan aplikasi frontend di komputer Anda:
+
+### Prasyarat
+* Pastikan Anda sudah menginstal [Node.js](https://nodejs.org/) versi 18+.
+
+### Langkah-langkah
+1. **Clone Repositori**:
+   ```bash
+   git clone https://github.com/gitaimee/careerpath-ai.git
+   cd careerpath-ai
+   ```
+
+2. **Instal Dependensi**:
+   ```bash
+   npm install
+   ```
+
+3. **Pastikan Backend Menyala**:
+   * Aplikasi frontend ini terhubung ke backend Express lokal yang berjalan di port `3000` (`http://localhost:3000`). 
+   * Pastikan Anda sudah menjalankan backend dari repositori [careerpath-backend](https://github.com/harrymx1/careerpath-backend) sebelum memulai tes.
+
+4. **Jalankan Mode Pengembangan**:
+   ```bash
+   npm run dev
+   ```
+   * Buka browser Anda dan akses halaman di alamat `http://localhost:5173`.
+
+---
+
+## 📁 Struktur Folder Utama
+
+```text
+frontend/
+├── src/
+│   ├── assets/       # Gambar, ikon, dan aset statis lainnya
+│   ├── components/   # Komponen UI global (seperti Navbar)
+│   ├── data/         # Data dummy lokalisasi (soal kuis, daftar profesi)
+│   ├── pages/        # Halaman-halaman utama (Landing, Tes, Hasil, Profil, Detail)
+│   ├── App.jsx       # Konfigurasi routing
+│   ├── index.css     # Entry CSS & konfigurasi Tailwind
+│   └── main.jsx      # Entrypoint React
+├── index.html        # File HTML utama & integrasi Google Fonts
+├── tailwind.config.js# Konfigurasi styling Tailwind CSS
+└── package.json      # List dependencies & scripts
+```
