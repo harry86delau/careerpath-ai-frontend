@@ -266,6 +266,7 @@ body {
 .cp-carrie-img img {
   width: 100%;
   height: auto;
+  animation: cpFloat 4s ease-in-out infinite;
 }
 
 .cp-card {
@@ -429,6 +430,8 @@ body {
   align-items: center;
   justify-content: center;
   gap: 6px;
+  width: 100%;
+  margin-top: auto;
 }
 
 .cp-footer-name {
@@ -474,10 +477,10 @@ body {
 }
 
 /* ================================================
-   TES PAGE â€” tambahkan di bagian bawah index.css
+   TES PAGE Ã¢â‚¬â€ tambahkan di bagian bawah index.css
    ================================================ */
 
-/* â”€â”€ Main wrapper â”€â”€ */
+/* Ã¢â€â‚¬Ã¢â€â‚¬ Main wrapper Ã¢â€â‚¬Ã¢â€â‚¬ */
 .cp-tes-main {
   flex: 1;
   display: flex;
@@ -487,7 +490,7 @@ body {
   padding: 48px 24px 60px;
 }
 
-/* â”€â”€ Hero section â”€â”€ */
+/* Ã¢â€â‚¬Ã¢â€â‚¬ Hero section Ã¢â€â‚¬Ã¢â€â‚¬ */
 .cp-tes-hero {
   background: rgba(192, 224, 255, 0.6);
   border-radius: 48px;
@@ -533,7 +536,7 @@ body {
   align-self: flex-start;
 }
 
-/* â”€â”€ Carrie floating â”€â”€ */
+/* Ã¢â€â‚¬Ã¢â€â‚¬ Carrie floating Ã¢â€â‚¬Ã¢â€â‚¬ */
 .cp-tes-carrie {
   flex-shrink: 0;
   width: clamp(160px, 22vw, 280px);
@@ -553,7 +556,7 @@ body {
   50%       { transform: translateY(-20px); }
 }
 
-/* â”€â”€ Cara Kerja section â”€â”€ */
+/* Ã¢â€â‚¬Ã¢â€â‚¬ Cara Kerja section Ã¢â€â‚¬Ã¢â€â‚¬ */
 .cp-tes-how {
   background: #ffffff;
   border-radius: 48px;
@@ -632,10 +635,10 @@ body {
 }
 
 /* ================================================
-   TEST QUESTIONS PAGE â€” tambahkan di bawah index.css
+   TEST QUESTIONS PAGE Ã¢â‚¬â€ tambahkan di bawah index.css
    ================================================ */
 
-/* â”€â”€ Main wrapper â”€â”€ */
+/* Ã¢â€â‚¬Ã¢â€â‚¬ Main wrapper Ã¢â€â‚¬Ã¢â€â‚¬ */
 .cp-tq-main {
   flex: 1;
   display: flex;
@@ -645,7 +648,7 @@ body {
   padding: 40px 24px 60px;
 }
 
-/* â”€â”€ Progress bar â”€â”€ */
+/* Ã¢â€â‚¬Ã¢â€â‚¬ Progress bar Ã¢â€â‚¬Ã¢â€â‚¬ */
 .cp-tq-progress-wrapper {
   width: 100%;
   max-width: 1280px;
@@ -678,7 +681,7 @@ body {
   white-space: nowrap;
 }
 
-/* â”€â”€ Card wrapper (clips slide animation) â”€â”€ */
+/* Ã¢â€â‚¬Ã¢â€â‚¬ Card wrapper (clips slide animation) Ã¢â€â‚¬Ã¢â€â‚¬ */
 .cp-tq-card-wrapper {
   width: 100%;
   max-width: 1280px;
@@ -686,7 +689,7 @@ body {
   border-radius: 48px;
 }
 
-/* â”€â”€ Question card â”€â”€ */
+/* Ã¢â€â‚¬Ã¢â€â‚¬ Question card Ã¢â€â‚¬Ã¢â€â‚¬ */
 .cp-tq-card {
   background: #ffffff;
   border-radius: 48px;
@@ -724,7 +727,7 @@ body {
 .cp-tq-slide-out-right { animation: cpTqSlideOutRight 0.28s cubic-bezier(0.4, 0, 0.2, 1) both; }
 .cp-tq-slide-in        { animation: cpTqSlideIn       0.28s cubic-bezier(0.4, 0, 0.2, 1) both; }
 
-/* â”€â”€ Heading & question text â”€â”€ */
+/* Ã¢â€â‚¬Ã¢â€â‚¬ Heading & question text Ã¢â€â‚¬Ã¢â€â‚¬ */
 .cp-tq-heading {
   font-weight: 700;
   font-size: clamp(24px, 3.5vw, 40px);
@@ -744,7 +747,7 @@ body {
   margin: 0;
 }
 
-/* â”€â”€ Answer options â”€â”€ */
+/* Ã¢â€â‚¬Ã¢â€â‚¬ Answer options Ã¢â€â‚¬Ã¢â€â‚¬ */
 .cp-tq-answers {
   display: flex;
   flex-direction: column;
@@ -789,7 +792,7 @@ body {
   background: rgba(136, 162, 255, 0.3);
 }
 
-/* â”€â”€ Nav buttons row â”€â”€ */
+/* Ã¢â€â‚¬Ã¢â€â‚¬ Nav buttons row Ã¢â€â‚¬Ã¢â€â‚¬ */
 .cp-tq-nav {
   display: flex;
   align-items: center;
@@ -859,7 +862,7 @@ body {
   line-height: 1;
 }
 
-/* â”€â”€ Dots â”€â”€ */
+/* Ã¢â€â‚¬Ã¢â€â‚¬ Dots Ã¢â€â‚¬Ã¢â€â‚¬ */
 .cp-tq-dots {
   display: flex;
   align-items: center;
@@ -916,7 +919,7 @@ body {
   z-index: 0;
 }
 
-/* â”€â”€ Main wrapper â”€â”€ */
+/* Ã¢â€â‚¬Ã¢â€â‚¬ Main wrapper Ã¢â€â‚¬Ã¢â€â‚¬ */
 .cp-eksplor-main {
   position: relative;
   z-index: 1;
@@ -927,7 +930,7 @@ body {
   padding: 60px 24px 80px;
 }
 
-/* â”€â”€ Hero text â”€â”€ */
+/* Ã¢â€â‚¬Ã¢â€â‚¬ Hero text Ã¢â€â‚¬Ã¢â€â‚¬ */
 .cp-eksplor-hero {
   display: flex;
   flex-direction: column;
@@ -956,7 +959,7 @@ body {
   margin: 0;
 }
 
-/* â”€â”€ Grid â”€â”€ */
+/* Ã¢â€â‚¬Ã¢â€â‚¬ Grid Ã¢â€â‚¬Ã¢â€â‚¬ */
 .cp-eksplor-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -965,7 +968,7 @@ body {
   max-width: 1160px;
 }
 
-/* â”€â”€ Card overrides for grid (bigger than scroll version) â”€â”€ */
+/* Ã¢â€â‚¬Ã¢â€â‚¬ Card overrides for grid (bigger than scroll version) Ã¢â€â‚¬Ã¢â€â‚¬ */
 .cp-eksplor-card {
   width: 100% !important;
   height: auto !important;
@@ -992,9 +995,9 @@ body {
 }
 
 
-/* â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+/* Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬
    Detail page  (tambahkan ke index.css)
-   â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+   Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬ */
 
 .cp-detail-page {
   position: relative;
@@ -1014,7 +1017,7 @@ body {
   z-index: 0;
 }
 
-/* â”€â”€ Main wrapper â”€â”€ */
+/* Ã¢â€â‚¬Ã¢â€â‚¬ Main wrapper Ã¢â€â‚¬Ã¢â€â‚¬ */
 .cp-detail-main {
   position: relative;
   z-index: 1;
@@ -1028,7 +1031,7 @@ body {
   align-self: stretch;
 }
 
-/* â”€â”€ Back link â”€â”€ */
+/* Ã¢â€â‚¬Ã¢â€â‚¬ Back link Ã¢â€â‚¬Ã¢â€â‚¬ */
 .cp-detail-back {
   font-family: "Overpass Mono", monospace;
   font-size: clamp(14px, 1.5vw, 18px);
@@ -1043,7 +1046,7 @@ body {
   color: #88a2ff;
 }
 
-/* â”€â”€ Hero: two-column layout â”€â”€ */
+/* Ã¢â€â‚¬Ã¢â€â‚¬ Hero: two-column layout Ã¢â€â‚¬Ã¢â€â‚¬ */
 .cp-detail-hero {
   display: flex;
   align-items: center;
@@ -1052,7 +1055,7 @@ body {
   animation: cpFadeUp 0.6s ease both;
 }
 
-/* â”€â”€ Left: text info â”€â”€ */
+/* Ã¢â€â‚¬Ã¢â€â‚¬ Left: text info Ã¢â€â‚¬Ã¢â€â‚¬ */
 .cp-detail-info {
   display: flex;
   flex-direction: column;
@@ -1085,7 +1088,7 @@ body {
   margin: 0;
 }
 
-/* â”€â”€ Label + tags row â”€â”€ */
+/* Ã¢â€â‚¬Ã¢â€â‚¬ Label + tags row Ã¢â€â‚¬Ã¢â€â‚¬ */
 .cp-detail-row {
   display: flex;
   flex-direction: column;
@@ -1136,7 +1139,7 @@ body {
   margin: 0;
 }
 
-/* â”€â”€ Right: illustration â”€â”€ */
+/* Ã¢â€â‚¬Ã¢â€â‚¬ Right: illustration Ã¢â€â‚¬Ã¢â€â‚¬ */
 .cp-detail-img-wrap {
   flex-shrink: 0;
   width: clamp(200px, 30vw, 420px);
@@ -1152,7 +1155,7 @@ body {
   animation: cpFloat 5s ease-in-out infinite;
 }
 
-/* â”€â”€ Not-found state â”€â”€ */
+/* Ã¢â€â‚¬Ã¢â€â‚¬ Not-found state Ã¢â€â‚¬Ã¢â€â‚¬ */
 .cp-detail-not-found {
   flex: 1;
   display: flex;
@@ -1164,7 +1167,7 @@ body {
   color: rgba(26, 35, 66, 0.6);
 }
 
-/* â”€â”€ Eksplor card: clickable link â”€â”€ */
+/* Ã¢â€â‚¬Ã¢â€â‚¬ Eksplor card: clickable link Ã¢â€â‚¬Ã¢â€â‚¬ */
 .cp-eksplor-card-link {
   text-decoration: none;
   color: inherit;
@@ -1465,7 +1468,7 @@ body {
   }
 }
 
-/* â”€â”€ Responsive â”€â”€ */
+/* Ã¢â€â‚¬Ã¢â€â‚¬ Responsive Ã¢â€â‚¬Ã¢â€â‚¬ */
 @media (max-width: 768px) {
   .cp-detail-hero {
     flex-direction: column-reverse;
@@ -1489,7 +1492,7 @@ body {
   }
 }
 
-/* â”€â”€ Responsive â”€â”€ */
+/* Ã¢â€â‚¬Ã¢â€â‚¬ Responsive Ã¢â€â‚¬Ã¢â€â‚¬ */
 @media (max-width: 900px) {
   .cp-eksplor-grid {
     grid-template-columns: repeat(2, 1fr);
@@ -1512,7 +1515,7 @@ body {
   }
 }
 
-/* â”€â”€ Responsive â”€â”€ */
+/* Ã¢â€â‚¬Ã¢â€â‚¬ Responsive Ã¢â€â‚¬Ã¢â€â‚¬ */
 @media (max-width: 768px) {
   .cp-tq-inner {
     padding: 28px 24px 36px;
@@ -1556,7 +1559,7 @@ body {
   }
 }
 
-/* â”€â”€ Responsive â”€â”€ */
+/* Ã¢â€â‚¬Ã¢â€â‚¬ Responsive Ã¢â€â‚¬Ã¢â€â‚¬ */
 @media (max-width: 768px) {
   .cp-tes-hero {
     flex-direction: column;
@@ -1623,8 +1626,11 @@ body {
   }
 
   .cp-card {
-    padding: 28px;
+    padding: 24px 16px;
     border-radius: 24px;
+    max-width: 100%;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
   }
 
   .cp-section1,
@@ -1677,34 +1683,8 @@ body {
   }
 }
 
-/* Large screen scaling fixes */
-.cp-eksplor-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 24px;
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
-  justify-items: center;
-}
-.cp-eksplor-main {
-  width: 100%;
-  max-width: 1440px;
-  margin: 0 auto;
-  padding: 0 24px;
-}
-.cp-hero, .cp-section1, .cp-section2, .cp-section3, .cp-tes-main, .cp-tq-main {
-  width: 100%;
-  max-width: 1440px;
-  margin: 0 auto;
-}
-.cp-tes-how-cards {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 20px;
-  width: 100%;
-}
-.cp-navbar {
-  max-width: 100%;
-  margin: 0 auto;
+@media (min-width: 1400px) {
+  .cp-cards-row {
+    margin: 0 auto;
+  }
 }

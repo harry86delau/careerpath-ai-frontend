@@ -36,12 +36,12 @@ export default function Eksplor() {
             ))}
           </section>
         </main>
-
-        <footer className="cp-footer">
-          <div className="cp-footer-name">careerpath.ai</div>
-          <div className="cp-footer-tagline">find your path in tech</div>
-        </footer>
       </div>
+
+      <footer className="cp-footer">
+        <div className="cp-footer-name">careerpath.ai</div>
+        <div className="cp-footer-tagline">find your path in tech</div>
+      </footer>
     </div>
   );
 }
