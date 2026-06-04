@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import axios from "axios";
 import Navbar from "../components/Navbar";
 import { testQuestions } from "../data/testQuestions";
 import { jobCards } from "../data/jobCards";
@@ -40,10 +41,50 @@ export default function TesQuestions() {
   };
 
   // ── DUMMY: hapus blok ini dan ganti dengan API call beneran ──────────────
-  const handleSubmit = () => {
+  const handleSubmit = async () => {
     if (!hasAnswer) return;
-    const randomJob = jobCards[Math.floor(Math.random() * jobCards.length)];
-    navigate("/hasil", { state: { result: randomJob.slug } });
+    
+    // Map selected object to an array of 10 integers (1-5 scale)
+    const answers = [];
+    for (let i = 0; i < 10; i++) {
+      // selected[i] is 0-4, we add 1 to make it 1-5
+      answers.push((selected[i] || 0) + 1);
+    }
+    
+    try {
+      const response = await axios.post("http://localhost:3000/api/assessments", {
+        // Hardcode a user ID for now since auth might not be fully wired up in frontend yet
+        // In real app, get this from Supabase Auth context
+        user_id: "00000000-0000-0000-0000-000000000000", 
+        answers: answers,
+        time_commitment_hours: 20
+      });
+      
+      const professions = response.data.data.professions;
+      const topJob = professions[0];
+      
+      const slugMap = {
+        0: "business-analyst",
+        1: "cloud-engineer",
+        2: "content-creator",
+        3: "cybersecurity-analyst",
+        4: "data-analyst",
+        5: "digital-marketer",
+        6: "machine-learning-engineer",
+        7: "project-manager",
+        8: "software-engineer",
+        9: "ui-ux-designer"
+      };
+      
+      const jobSlug = slugMap[topJob.career_encoded] || "software-engineer";
+      
+      navigate("/hasil", { state: { result: jobSlug, professionsData: professions } });
+    } catch (err) {
+      console.error("Error submitting assessment:", err);
+      // Fallback if backend fails
+      const randomJob = jobCards[Math.floor(Math.random() * jobCards.length)];
+      navigate("/hasil", { state: { result: randomJob.slug } });
+    }
   };
   // ── END DUMMY ─────────────────────────────────────────────────────────────
 

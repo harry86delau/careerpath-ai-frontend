@@ -12,6 +12,7 @@
   "dependencies": {
     "@fontsource/overpass-mono": "^5.2.8",
     "@fontsource/pixelify-sans": "^5.2.7",
+    "axios": "^1.17.0",
     "react": "^19.2.6",
     "react-dom": "^19.2.6",
     "react-router-dom": "^7.16.0"
